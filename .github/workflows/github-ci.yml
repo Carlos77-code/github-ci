@@ -31,7 +31,7 @@ jobs:
         run: sudo npm install -g newman-reporter-htmlextra
         
       - name: Step 3 Execute colletion
-        run: newman run ./viacep-ci.json -e ./viacep-env.json --reporters cli, -r htmlextra --reporter-htmlextra-export ./results/Report.html
+        run: newman run ./ViaCep-ci.json -e ./viacep-env.json --reporters cli, -r htmlextra --reporter-htmlextra-export ./results/Report.html
         
       - name: Step 4 Archive production artifacts
         uses: actions/upload-artifact@v2
